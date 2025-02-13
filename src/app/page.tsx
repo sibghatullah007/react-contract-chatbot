@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gray-100 text-gray-900">
+    <div className="min-h-[75vh] bg-gray-100 text-gray-900">
       {/* Hero Section */}
       <section className="flex flex-col items-center justify-center h-[75vh] text-center py-20 bg-gray-200">
         <h2 className="text-4xl font-bold mb-4">Manage Your Contracts with AI</h2>
