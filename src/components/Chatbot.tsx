@@ -37,12 +37,12 @@ export default function Chatbot({ contractId }: { contractId: string }) {
         type="text"
         value={question}
         onChange={(e) => setQuestion(e.target.value)}
-        className="border border-gray-400 p-2 w-[89%] mt-2 rounded-lg"
+        className="border border-gray-400 p-2 w-[74%] md:w-[89%] mt-2 rounded-lg"
         placeholder="Ask about your contract..."
       />
       <button 
         onClick={sendMessage} 
-        className="bg-black text-white p-2 mt-2 w-[10%] rounded-lg"
+        className="bg-black text-white p-2 mt-2 w-[25%] md:w-[10%] rounded-lg"
       >
         Send
       </button>
