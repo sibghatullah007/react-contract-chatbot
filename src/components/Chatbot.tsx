@@ -28,7 +28,7 @@ export default function Chatbot({ contractId }: { contractId: string }) {
         {chat.map((c, i) => (
           <div key={i} className="mb-2">
             <p className="text-black font-bold">You: {c.user}</p>
-            <div className="text-gray-700"><b>Bot:</b> <ReactMarkdown>{c.bot}</ReactMarkdown></div>
+            <div className=" flex gap-2 text-gray-700"><b>Bot:</b> <ReactMarkdown>{c.bot}</ReactMarkdown></div>
           </div>
         ))}
       </div>
