@@ -5,6 +5,8 @@ import { uploadPDF } from "../utils/api";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { UploadCloud } from "lucide-react";
+import { AiOutlineLoading3Quarters } from "react-icons/ai";
+
 
 export default function FileUpload({ onUpload }: { onUpload: (id: string, summary: string) => void }) {
   const [file, setFile] = useState<File | null>(null);
@@ -38,9 +40,10 @@ export default function FileUpload({ onUpload }: { onUpload: (id: string, summar
   <button 
     onClick={handleUpload} 
     disabled={!file || loading} 
-    className="bg-black text-white px-4 py-2 rounded hover:text-gray-100 transition-all"
+    className="bg-black flex gap-2 items-center text-white px-4 py-2 rounded hover:text-gray-100 transition-all"
   >
-    {loading ? "Uploading..." : "Upload PDF"}
+    {loading && <AiOutlineLoading3Quarters className="animate-spin"/>}
+    {loading ? "Uploading" : "Upload PDF"}
   </button>
 </div>
   );
