@@ -54,10 +54,9 @@ export default function Chatbot({ contractId, summary }: { contractId: string; s
         {chat.map((c, i) => (
           <div key={i} className="my-4">
             <div className="border p-4 rounded-lg bg-gray-100 w-fit max-w-[70%] pe-8 ml-auto my-3">
-              <p className="text-black font-bold">You: {c.user}</p>
+              <p className="text-black font-bold">{c.user}</p>
             </div>
             <div className="border p-4 rounded-lg bg-white w-fit max-w-[80%] pe-8 my-3 flex gap-2 text-gray-700">
-              <b>Bot:</b>
               <div>
                 {typeof c.bot === "string" ? <ReactMarkdown>{c.bot}</ReactMarkdown> : c.bot}
               </div>
