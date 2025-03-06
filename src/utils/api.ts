@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE_URL = 'https://lethalzoro1.pythonanywhere.com';
+const API_BASE_URL = 'https://contracts-summary-flask.onrender.com';
 
 export const uploadPDF = async (file: File) => {
   const formData = new FormData();
