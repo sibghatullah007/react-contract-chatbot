@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE_URL = 'https://mvp3-1.onrender.com';
+const API_BASE_URL = 'https://mvp3-contract.onrender.com';
 // const API_BASE_URL = 'https://mvpfeb25.onrender.com';
 
 export const uploadPDF = async (file: File) => {
